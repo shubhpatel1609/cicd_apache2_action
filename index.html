@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shubh Patel — Résumé</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Folder tab navigation -->
+  <nav class="tabs" aria-label="Section navigation">
+    <button class="tab" data-target="profile" aria-current="true"><span>Profile</span></button>
+    <button class="tab" data-target="experience"><span>Experience</span></button>
+    <button class="tab" data-target="skills"><span>Skills</span></button>
+    <button class="tab" data-target="education"><span>Education</span></button>
+    <button class="tab" data-target="contact"><span>Contact</span></button>
+  </nav>
+
+  <div class="sheet">
+
+    <header class="letterhead">
+      <div class="letterhead__id">
+        <span class="letterhead__label">File No.</span>
+        <span class="letterhead__value">SP&nbsp;—&nbsp;2026</span>
+      </div>
+
+      <div class="letterhead__main">
+        <h1 class="name">Shubh Patel</h1>
+        <p class="role">Software Engineer — Web &amp; Systems</p>
+      </div>
+
+      <div class="seal" aria-hidden="true">
+        <svg viewBox="0 0 120 120">
+          <circle class="seal__ring" cx="60" cy="60" r="52"/>
+          <circle class="seal__ring seal__ring--inner" cx="60" cy="60" r="44"/>
+          <path id="sealCurveTop" d="M 16,60 A 44,44 0 0,1 104,60" fill="none"/>
+          <path id="sealCurveBottom" d="M 104,64 A 44,44 0 0,1 16,64" fill="none"/>
+          <text class="seal__text">
+            <textPath href="#sealCurveTop" startOffset="50%" text-anchor="middle">CERTIFIED</textPath>
+          </text>
+          <text class="seal__text">
+            <textPath href="#sealCurveBottom" startOffset="50%" text-anchor="middle">RESUME · FILE</textPath>
+          </text>
+          <text class="seal__initials" x="60" y="68" text-anchor="middle">SP</text>
+        </svg>
+      </div>
+    </header>
+
+    <main>
+
+      <section id="profile" class="entry">
+        <div class="entry__index">01</div>
+        <div class="entry__body">
+          <h2>Profile</h2>
+          <p class="lede">
+            Software engineer who enjoys turning fuzzy problems into clean, dependable systems.
+            Comfortable moving between frontend interfaces and backend architecture, with a habit
+            of leaving code — and documentation — better than it was found.
+          </p>
+          <ul class="stat-row">
+            <li><span class="stat-num">4+</span><span class="stat-label">years building software</span></li>
+            <li><span class="stat-num">12</span><span class="stat-label">shipped products</span></li>
+            <li><span class="stat-num">3</span><span class="stat-label">teams led</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="experience" class="entry">
+        <div class="entry__index">02</div>
+        <div class="entry__body">
+          <h2>Experience</h2>
+
+          <article class="record">
+            <div class="record__head">
+              <h3>Senior Software Engineer</h3>
+              <span class="record__meta">Northgate Labs · 2023 — Present</span>
+            </div>
+            <ul>
+              <li>Led rebuild of the core dashboard, cutting page load time by 42%.</li>
+              <li>Mentored a team of 4 engineers through two major product launches.</li>
+              <li>Designed the internal service that now handles 2M+ requests a day.</li>
+            </ul>
+          </article>
+
+          <article class="record">
+            <div class="record__head">
+              <h3>Software Engineer</h3>
+              <span class="record__meta">Verendra Systems · 2021 — 2023</span>
+            </div>
+            <ul>
+              <li>Built and shipped the customer-facing billing portal end to end.</li>
+              <li>Migrated legacy monolith to a modular service architecture.</li>
+              <li>Introduced automated testing that reduced production bugs by 30%.</li>
+            </ul>
+          </article>
+
+          <article class="record">
+            <div class="record__head">
+              <h3>Software Engineering Intern</h3>
+              <span class="record__meta">Ashford & Cole · 2020 — 2021</span>
+            </div>
+            <ul>
+              <li>Prototyped an internal analytics tool adopted by three departments.</li>
+              <li>Wrote onboarding docs still used by every new intern cohort.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="entry">
+        <div class="entry__index">03</div>
+        <div class="entry__body">
+          <h2>Skills</h2>
+          <div class="skill-groups">
+            <div class="skill-group">
+              <h3>Languages</h3>
+              <p>JavaScript / TypeScript, Python, Java, SQL</p>
+            </div>
+            <div class="skill-group">
+              <h3>Frameworks</h3>
+              <p>React, Node.js, Express, Django</p>
+            </div>
+            <div class="skill-group">
+              <h3>Infrastructure</h3>
+              <p>AWS, Docker, PostgreSQL, Redis, CI/CD</p>
+            </div>
+            <div class="skill-group">
+              <h3>Practice</h3>
+              <p>System design, code review, technical writing, mentoring</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="entry">
+        <div class="entry__index">04</div>
+        <div class="entry__body">
+          <h2>Education</h2>
+          <article class="record">
+            <div class="record__head">
+              <h3>B.Tech in Computer Science</h3>
+              <span class="record__meta">Institute of Technology · 2017 — 2021</span>
+            </div>
+            <ul>
+              <li>Graduated with distinction; focus on distributed systems.</li>
+              <li>Teaching assistant for Data Structures & Algorithms, two semesters.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="entry entry--last">
+        <div class="entry__index">05</div>
+        <div class="entry__body">
+          <h2>Contact</h2>
+          <ul class="contact-list">
+            <li><span class="contact-label">Email</span><a href="mailto:shubh.patel@example.com">shubh.patel@example.com</a></li>
+            <li><span class="contact-label">Phone</span><a href="tel:+910000000000">+91 00000 00000</a></li>
+            <li><span class="contact-label">LinkedIn</span><a href="#">linkedin.com/in/shubhpatel</a></li>
+            <li><span class="contact-label">GitHub</span><a href="#">github.com/shubhpatel</a></li>
+            <li><span class="contact-label">Location</span><span>Ahmedabad, Gujarat, India</span></li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="stamp-footer">
+      <span>Prepared &amp; maintained by Shubh Patel</span>
+      <span class="stamp-footer__dot">•</span>
+      <span id="lastUpdated"></span>
+    </footer>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
